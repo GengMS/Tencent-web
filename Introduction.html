@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>19APP1耿明硕</title>
+    <link rel="icon" type="image/x-icon" href="./img/未标题-1.png" />
+    <link rel="stylesheet" href="./bootstrap-3.3.7-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="./font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.css">
+
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="./js/jquery-2.1.0.js"></script>
+    <script src="./bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+    <style>
+        body {
+            position: relative;
+        }
+        
+        #section1 {
+            padding-top: 80px;
+           
+            color: #fff;
+            background: #292a80d0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.479);
+            padding-bottom: 40px;
+        }
+        #section2>div:nth-child(1),#section3>div:nth-child(1),#section4>div:nth-child(1),#ping_tai>div:nth-child(1){
+            display: none;
+        }
+        #section2 {
+            padding-top: 80px;
+            
+            color: #fff;
+            background: #181845be;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.479);
+            padding-bottom: 40px;
+        }
+
+        #section3 {
+            padding-top: 80px;
+            
+            color: #fff;
+            background: #292a80d0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.479);
+            padding-bottom: 40px;
+        }
+
+        #section4 {
+           padding-top: 80px;
+           padding-bottom: 40px;
+            color: #fff;
+            background: #181845be;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.479);
+        }
+        #ping_tai {
+           padding-top: 80px;
+           padding-bottom: 40px;
+            color: #fff;
+            background: #292a80d0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.479);
+        }
+        .ser{
+            outline: none;
+            width: 95%;
+        }
+        .que_ren{
+            display: none;
+        }
+        .fa-times{
+            display: none;
+        }
+        @media screen and (max-width: 500px){
+            .container_con{
+                width: 100% !important;
+                display: block !important;;
+            }
+            .con_le{
+                left: 0px !important;
+                width: 100% !important;
+            }
+            .nav > li{
+                float: left;
+            }
+            .con_ri{
+                width: 100% !important;
+                margin-left: 0px !important;
+                
+            }
+            #section1 {
+                padding-top: 100px;
+            }
+            .con_1{
+                width: 64% !important;
+            }
+            .con_2{
+                width: 74% !important;
+            }
+            .con_2>div:nth-child(2)>div:nth-child(1){
+                margin-top: 30% !important;
+            }
+            .ser{
+                width: 90% ;
+            }
+            .input_dis{
+                position: relative; top: 100px;
+            }
+        }
+    </style>
+</head>
+
+<body style="background: linear-gradient(to bottom right, #292a80, #181845);" data-spy="scroll" data-target=".navbar" data-offset="50">
+
+    <div class="container1"
+        style=" background: #453b8b; z-index: 999999999; position: fixed; top: 0px; left: 0px; display: flex; justify-content: space-between;">
+        <a href="./index.html" style="z-index: 99;">
+            <img src="./img/logo.png" alt="">
+        </a>
+        <div class="f1_1"
+            style="z-index: 99; display: flex; justify-content: space-around; width: 25%; position: absolute; right: 0;">
+            <div style="color: whitesmoke; line-height: 80px;">
+                <a href="./about.html">关于腾讯游戏</a>
+            </div>
+            <div style="color: whitesmoke; line-height: 80px;">
+                <a href="./Introduction.html">游戏介绍</a>
+            </div>
+            <div style="color: whitesmoke; line-height: 80px;">
+                <a href="./Brands.html">品牌活动</a>
+            </div>
+        </div>
+        <div class="fa fa-bars fa-3x dis_bottom"
+            style="line-height: 80px; color: white; display: none; z-index: 99999999;">&nbsp;&nbsp;&nbsp;</div>
+        <div class="fa fa-bars fa-3x dis_phone" style="line-height: 80px; color: white; display: none;">
+            &nbsp;&nbsp;&nbsp;</div>
+        <div class="fa fa-window-close fa-3x dis_phone_1" style="line-height: 80px; color: white; display: none;">
+            &nbsp;&nbsp;&nbsp;</div>
+    </div>
+    <div class="container_con" style="width: 60%; margin: 0 auto; display: flex; justify-content: space-between;  position: relative;">
+        <div class="con_le" style="width: 12%;  position: fixed; z-index: 999; left: 20%;top: 80px;">
+            <nav class="navbar navbar-inverse ">
+                <div class="container-fluid">
+                    <!-- <div class="navbar-header">
+
+                        <a class="navbar-brand" href="#">WebSiteName</a>
+                    </div> -->
+                    <div>
+                        <div id="myNavbar">
+                            <ul class="nav navbar-nav">
+                                <li>
+                                    <a href="">自研产品:</a>
+                                </li>
+                                <li class="active">
+                                    <a href="#section1">端游</a>
+                                </li>
+                                <li>
+                                    <a href="#section2">手游</a>
+                                </li>
+                                <!-- <br><br> -->
+                                <li>
+                                    <a href="">发行产品:</a>
+                                </li>
+                                <li>
+                                    <a href="#section3">端游</a>
+                                </li>
+                                <li>
+                                    <a href="#section4">手游</a>
+                                </li>
+                                <!-- <br><br> -->
+                                <li>
+
+                                    <a href="#ping_tai">平台产品</a>
+                                </li>
+                                <!-- <br><br>
+                                <li>
+                                    <div class="input_dis" style="margin-top: 82px; display: block;">
+                                        <input type="text"  class="ser" style="width: 95%; background: none; border: none; border-bottom: 1px solid white; color: white;">
+                                        
+                                        <label for="ser" class="shu_ru" style="color: white;">
+                                        <i class="fa fa-search fa-2x"></i>
+                                        
+                                        </label>
+                                    </div>
+                                </li> -->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="con_ri" style="width: 80%; margin-left: 20%; ">
+            <div class="input_dis" style="margin-top: 82px; display: block;">
+                <input type="text"  class="ser" style=" background: none; border: none; border-bottom: 1px solid white; color: white;">
+                
+                <label for="ser" class="shu_ru" style="color: white;">
+                <i class="fa fa-search fa-2x"></i>
+                
+                </label>
+                <i class="fa fa-times fa-2x" style="color: white;"></i>
+            </div>
+            <div id="section1" class="container-fluid section">
+                
+                <h1>自研产品:端游</h1>
+                <div class="ser_con" style="margin-top: 40px;">
+                    <div style="display: flex; justify-content: space-between;">
+                        <div class="con_1" style="display: flex; justify-content: space-between; width: 25%;">
+                            <div style="background-color: white; width: 100px; height: 100px; border-radius: 5px;">
+                                <img src="./img/3_1.png" alt="" style="width: 80px; height: 80px; margin-left: 50%; margin-top: 50%; transform: translateX(-50%) translateY(-50%);">
+                            </div>
+                            <div>
+                                <div style="font-size: 20px;margin-top: 50%;transform: translateY(-50%);">QQ飞车</div>
+                                <div style="color: white; opacity: 0.5; font-size: 13px; transform: translateY(-50%);">客户端游戏</div>
+                            </div>
+                        </div>
+                        <div>
+                            <a href="">
+                                进入官网<i class="fa fa-chevron-right" style="color: skyblue; line-height: 100px;"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div style="color: white; opacity: 0.5; margin-top: 20px;">
+                        《QQ飞车》是首款腾讯自主研发的竞速类休闲网络游戏，底层架构基于世界领先的物理引擎PhysX，游戏手感全面超越市场同类产品，全力为用户打造逼真的驾驶体验；3D时尚人物造型、古朴潮流幻想的赛道主题、第三人称尾随视角，力求为用户营造身历其境的感觉。在2011年的5月，最高同时在线帐户数突破200万，乃中国网游史上第九款同时在线冲破百万大关的产品，并为全球游戏市场奉献了第一款同时在线破百万的竞速类网络游戏，同时，也使腾讯拥有了第一款同时在线破百万的自主研发产品。
+    QQ飞车一贯践行“提升用户体验价值，用游戏为用户创造快乐”的产品研发运营的理念，从公测至今，发布了超过16个业界首创的全新玩法模式，并基于丰富的核心玩法，成功开创了竞速网游竞技化与社区化相结合的全新方向，实现了用户价值的再创造。
+                    </div>
+                </div>
+                <div class="ser_con" style="margin-top: 40px;">
+                    <div style="display: flex; justify-content: space-between;">
+                        <div  class="con_1" style="display: flex; justify-content: space-between; width: 25%;">
+                            <div style="background-color: white; width: 100px; height: 100px; border-radius: 5px;">
+                                <img src="./img/3_2.png" alt="" style="width: 80px; height: 80px; margin-left: 50%; margin-top: 50%; transform: translateX(-50%) translateY(-50%);">
+                            </div>
+                            <div>
+                                <div style="font-size: 20px;margin-top: 50%;transform: translateY(-50%);">天涯明月刀</div>
+                                <div style="color: white; opacity: 0.5; font-size: 13px; transform: translateY(-50%);">客户端游戏</div>
+                            </div>
+                        </div>
+                        <div>
+                            <a href="">
+                                进入官网<i class="fa fa-chevron-right" style="color: skyblue; line-height: 100px;"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div style="color: white; opacity: 0.5; margin-top: 20px;">
+                        《《天涯明月刀》是腾讯游戏自主研发的高品质国风题材MMORPG网游。游戏由古龙版权委员会正版授权, 采用了自主研发的国际领先Quicksilver 3D物理引擎，是目前国内最高水准表现比肩国际顶尖水平的“真次世代”网络游戏。游戏主打精品国风理念，为数千万玩家提供一个海阔天空、浪漫唯美，至情至性、自由自在，千人千面、灵动传神，剑荡八荒、我意凌云的畅爽江湖。《天涯明月刀》在创作中努力打造了集文学，美术，声音，玩法等传统文化为一体的综合性虚拟创作，让传统文化在游戏中处处得以展现，丰富了游戏所具有的艺术价值。历法系统和星象系统均被运用到了游戏中；苏绣、书法、木版年画、古琴等十大这些中国独有的非遗文化艺术，也在游戏里大放异彩；“沧海云帆”资料片更是了还原了北宋海上丝绸之路的景象，让玩家们真实地体验到古代中国的强大与繁荣。天刀由此构建了传统文化与年轻用户之间的桥梁，获得了Discovery、央视等多个媒体均高度认可，玩家群体也因此武侠文化、国风文化等表现出了更浓厚的兴趣。
+                    </div>
+                </div>
+                <div class="ser_con" style="margin-top: 40px;">
+                    <div  style="display: flex; justify-content: space-between;">
+                        <div  class="con_1" style="display: flex; justify-content: space-between; width: 25%;">
+                            <div style="background-color: white; width: 100px; height: 100px; border-radius: 5px;">
+                                <img src="./img/3_3.png" alt="" style="width: 80px; height: 80px; margin-left: 50%; margin-top: 50%; transform: translateX(-50%) translateY(-50%);">
+                            </div>
+                            <div>
+                                <div style="font-size: 20px;margin-top: 50%;transform: translateY(-50%);">无限法则</div>
+                                <div style="color: white; opacity: 0.5; font-size: 13px; transform: translateY(-50%);">客户端游戏</div>
+                            </div>
+                        </div>
+                        <div>
+                            <a href="">
+                                进入官网<i class="fa fa-chevron-right" style="color: skyblue; line-height: 100px;"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div style="color: white; opacity: 0.5; margin-top: 20px;">
+                        《无限法则》是由腾讯北极光工作室群研发的全新一代竞技射击网游。运用打磨十年的QuicksilverX顶级自研引擎，对标3A级品质，拥有逼真的主机级画面效果。以灾难生存为核心玩法，引入极限运动、不规则区域、直升机营救、高科技战术装备等多项创新元素，带给玩家新鲜的超级灾难逃生体验。产品在全球发行已经有超过1000万用户，获得媒体和玩家一致好评，在海外拿到了国产游戏最高IGN 8.5分。
+                    </div>
+                </div>
+                <div class="ser_con" style="margin-top: 40px;">
+                    <div style="display: flex; justify-content: space-between;">
+                        <div  class="con_1" style="display: flex; justify-content: space-between; width: 25%;">
+                            <div style="background-color: white; width: 100px; height: 100px; border-radius: 5px;">
+                                <img src="./img/3_4.png" alt="" style="width: 80px; height: 80px; margin-left: 50%; margin-top: 50%; transform: translateX(-50%) translateY(-50%);">
+                            </div>
+                            <div>
+                                <div style="font-size: 20px;margin-top: 50%;transform: translateY(-50%);">逆战</div>
+                                <div style="color: white; opacity: 0.5; font-size: 13px; transform: translateY(-50%);">客户端游戏</div>
+                            </div>
+                        </div>
+                        <div>
+                            <a href="">
+                                进入官网<i class="fa fa-chevron-right" style="color: skyblue; line-height: 100px;"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div style="color: white; opacity: 0.5; margin-top: 20px;">
+                        《逆战》国产FPS领军之作。游戏采用第一人称射击的形式，支持爽快淋漓的多人对战。玩家可操控机甲战士，驾驶武装直升机,使用电锯、火焰喷射器、激光枪等武器与巨型BOSS展开厮杀，是不容错过的FPS网络游戏。
+                    </div>
+                </div>
+            </div>
+            <div id="section2" class="container-fluid section">
+               
+                <h1>自研产品:手游</h1>
+                <div class="ser_con" style="margin-top: 40px;">
+                    
+                    <div style="display: flex; justify-content: space-between;">
+                        <div  class="con_1" style="display: flex; justify-content: space-between; width: 25%;">
+                            <div style="background-color: white; width: 100px; height: 100px; border-radius: 5px;">
+                                <img src="./img/3_5.png" alt="" style="width: 80px; height: 80px; margin-left: 50%; margin-top: 50%; transform: translateX(-50%) translateY(-50%);">
+                            </div>
+                            <div>
+                                <div style="font-size: 20px;margin-top: 50%;transform: translateY(-50%);">王者荣耀</div>
+                                <div style="color: white; opacity: 0.5; font-size: 13px; transform: translateY(-50%);">手机端游戏</div>
+                            </div>
+                        </div>
+                        <div>
+                            <a href="">
+                                进入官网<i class="fa fa-chevron-right" style="color: skyblue; line-height: 100px;"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div style="color: white; opacity: 0.5; margin-top: 20px;">
+                        腾讯第一5V5团队公平竞技手游，国民MOBA手游大作！5V5王者峡谷、公平对战、还原MOBA经典体验；契约之战、五军对决、边境突围等，带来花式作战乐趣！10秒实时跨区匹配，与好友开黑上分，向最强王者进击！多款英雄任凭选择，一血、五杀、超神，实力碾压，收割全场！敌军即将到达战场，王者召唤师快来集结好友，准备团战，就在《王者荣耀》！
+                    </div>
+                </div>
+                <div class="ser_con" style="margin-top: 40px;">
+                    <div style="display: flex; justify-content: space-between;">
+                        <div  class="con_1" style="display: flex; justify-content: space-between; width: 25%;">
+                            <div style="background-color: white; width: 100px; height: 100px; border-radius: 5px;">
+                                <img src="./img/3_6.png" alt="" style="width: 80px; height: 80px; margin-left: 50%; margin-top: 50%; transform: translateX(-50%) translateY(-50%);">
+                            </div>
+                            <div>
+                                <div style="font-size: 20px;margin-top: 50%;transform: translateY(-50%);">和平精英</div>
+                                <div style="color: white; opacity: 0.5; font-size: 13px; transform: translateY(-50%);">手机端游戏</div>
+                            </div>
+                        </div>
+                        <div>
+                            <a href="">
+                                进入官网<i class="fa fa-chevron-right" style="color: skyblue; line-height: 100px;"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div style="color: white; opacity: 0.5; margin-top: 20px;">
+                        《和平精英》是由腾讯光子工作室群自研打造的军事竞赛体验手游，为向守卫国家领空的蓝天勇士致敬，特邀请空军招飞局协助指导。虚幻引擎4研发，次世代完美画质，极致视听感受；超大实景地图，打造指尖战场，全方面自由施展战术；百人同场竞技，真实弹道，完美的射击手感；好友一键组队，语音开黑；腾讯光子工作室群超过300人团队研发，给您带来一场震撼的竞技体验
+                    </div>
+                </div>
+                <div class="ser_con" style="margin-top: 40px;">
+                    <div style="display: flex; justify-content: space-between;">
+                        <div  class="con_1" style="display: flex; justify-content: space-between; width: 30%;">
+                            <div style="background-color: white; width: 100px; height: 100px; border-radius: 5px;">
+                                <img src="./img/3_7.png" alt="" style="width: 80px; height: 80px; margin-left: 50%; margin-top: 50%; transform: translateX(-50%) translateY(-50%);">
+                            </div>
+                            <div>
+                                <div style="font-size: 20px;margin-top: 50%;transform: translateY(-50%);">火影忍者手游</div>
+                                <div style="color: white; opacity: 0.5; font-size: 13px; transform: translateY(-50%);">手机端游戏</div>
+                            </div>
+                        </div>
+                        <div>
+                            <a href="">
+                                进入官网<i class="fa fa-chevron-right" style="color: skyblue; line-height: 100px;"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div style="color: white; opacity: 0.5; margin-top: 20px;">
+                        《火影忍者》是由万代南梦宫正版授权、腾讯游戏研发的唯一正版火影格斗手游。《火影忍者》手游采用了动漫的情节作为游戏的背景，讲述了漩涡鸣人为了保护忍者世界，立志修炼成为火影的故事。在严谨还原原作故事的基础上,独创忍术格斗系统,配合CG级华丽技能表现,尽兴体验酣畅淋漓的格斗连招;更可以自由收集热门忍者，玩家可扮演漩涡鸣人、宇智波佐助、春野樱等忍者，去保护好整个忍者世界。游戏拥有勾玉、天赋、通灵等战斗培养元素，还引入段位赛、积分赛等PVP玩法，自2016年上线以来受到玩家的热烈追捧。
+
+狐妖小红娘
+                    </div>
+                </div>
+                
+            </div>
+            <div id="section3" class="container-fluid section">
+                
+                <h1>发行产品:端游</h1>
+                <div class="ser_con" style="margin-top: 40px;">
+                    <div style="display: flex; justify-content: space-between;">
+                        <div  class="con_1" style="display: flex; justify-content: space-between; width: 25%;">
+                            <div style="background-color: white; width: 100px; height: 100px; border-radius: 5px;">
+                                <img src="./img/3_8.png" alt="" style="width: 80px; height: 80px; margin-left: 50%; margin-top: 50%; transform: translateX(-50%) translateY(-50%);">
+                            </div>
+                            <div>
+                                <div style="font-size: 20px;margin-top: 50%;transform: translateY(-50%);">英雄联盟</div>
+                                <div style="color: white; opacity: 0.5; font-size: 13px; transform: translateY(-50%);">客户端游戏</div>
+                            </div>
+                        </div>
+                        <div>
+                            <a href="">
+                                进入官网<i class="fa fa-chevron-right" style="color: skyblue; line-height: 100px;"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div style="color: white; opacity: 0.5; margin-top: 20px;">
+                        《英雄联盟》是由拳头游戏开发、腾讯游戏代理运营的英雄对战MOBA网游，2016年全球月活跃玩家突破1亿人。公测以来，英雄联盟致力于推动全球电子竞技发展，拥有全球电竞用户最多的国际电竞赛事，2018年，英雄联盟全球总决赛观赛独立人数峰值达到9960万，创造全新记录。2018全年LPL赛区职业赛事直播观赛人次突破150亿，直播观赛总时长超过25亿小时，赛事内容观看量突破300亿。                    </div>
+                </div>
+                <div class="ser_con" style="margin-top: 40px;">
+                    <div style="display: flex; justify-content: space-between;">
+                        <div  class="con_1" style="display: flex; justify-content: space-between; width: 25%;">
+                            <div style="background-color: white; width: 100px; height: 100px; border-radius: 5px;">
+                                <img src="./img/3_9.png" alt="" style="width: 80px; height: 80px; margin-left: 50%; margin-top: 50%; transform: translateX(-50%) translateY(-50%);">
+                            </div>
+                            <div>
+                                <div style="font-size: 20px;margin-top: 50%;transform: translateY(-50%);">DNF</div>
+                                <div style="color: white; opacity: 0.5; font-size: 13px; transform: translateY(-50%);">客户端游戏</div>
+                            </div>
+                        </div>
+                        <div>
+                            <a href="">
+                                进入官网<i class="fa fa-chevron-right" style="color: skyblue; line-height: 100px;"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div style="color: white; opacity: 0.5; margin-top: 20px;">
+                        DNF端游是腾讯首个以经典游戏为起点，跨国打造的游戏IP。2019是DNF在中国运营的第十一年，汇聚了超过3亿勇士的热爱，DNF已经沉淀了深厚的玩家情感和独特的游戏文化，Fight的品牌主张也激励众多玩家不断进取。除此之外，DNF打造了文学，动画，音乐，漫画等多种内容形态，官方动画已经连续打造两季，成为国漫的代表性作品。基于腾讯新文创战略，DNF也通过多元文化连接，创造更加有文化价值和产业价值的优质内容，并通过阿拉德市集等产品演绎和落地。十一年勇士热爱，未来更加精彩，随着更多产品和内容形态将不断推出，DNF持续为玩家塑造精彩纷呈的阿拉德世界。                    </div>
+                </div>
+                <div class="ser_con" style="margin-top: 40px;">
+                    <div style="display: flex; justify-content: space-between;">
+                        <div  class="con_1" style="display: flex; justify-content: space-between; width: 28%;">
+                            <div style="background-color: white; width: 100px; height: 100px; border-radius: 5px;">
+                                <img src="./img/3_10.png" alt="" style="width: 80px; height: 80px; margin-left: 50%; margin-top: 50%; transform: translateX(-50%) translateY(-50%);">
+                            </div>
+                            <div>
+                                <div style="font-size: 20px;margin-top: 50%;transform: translateY(-50%);">穿越火线</div>
+                                <div style="color: white; opacity: 0.5; font-size: 13px; transform: translateY(-50%);">客户端游戏</div>
+                            </div>
+                        </div>
+                        <div>
+                            <a href="">
+                                进入官网<i class="fa fa-chevron-right" style="color: skyblue; line-height: 100px;"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div style="color: white; opacity: 0.5; margin-top: 20px;">
+                        穿越火线（Cross Fire，简称CF），是由Smilegate公司开发，在中国大陆由腾讯运营的第一人称射击网络游戏。游戏以两大国际佣兵组织间的作战为背景，不断推出新内容，旨在为玩家提供激情、爽快的战斗体验，目前已实现600万人同时在线，注册用户超过5.6亿。百城联赛、CFPL、CFS等丰富的赛事体系，更为不同层次的玩家提供了展示自我的枪战舞台！
+狐妖小红娘
+                    </div>
+                </div>
+            </div>
+            <div id="section4" class="container-fluid section">
+                
+                <h1>发行产品:手游</h1>
+                <div class="ser_con" style="margin-top: 40px;">
+                    <div style="display: flex; justify-content: space-between;">
+                        <div  class="con_1" style="display: flex; justify-content: space-between; width: 25%;">
+                            <div style="background-color: white; width: 100px; height: 100px; border-radius: 5px;">
+                                <img src="./img/3_11.png" alt="" style="width: 80px; height: 80px; margin-left: 50%; margin-top: 50%; transform: translateX(-50%) translateY(-50%);">
+                            </div>
+                            <div>
+                                <div style="font-size: 20px;margin-top: 50%;transform: translateY(-50%);">天龙八部</div>
+                                <div style="color: white; opacity: 0.5; font-size: 13px; transform: translateY(-50%);">手机端游戏</div>
+                            </div>
+                        </div>
+                        <div>
+                            <a href="">
+                                进入官网<i class="fa fa-chevron-right" style="color: skyblue; line-height: 100px;"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div style="color: white; opacity: 0.5; margin-top: 20px;">
+                        《天龙八部》手游是一款全新3DMMO武侠手游，由“天龙八部”端游原班人马精心打造、腾讯代理的精品手游大作，既完美传承了端游核心特色和经典玩法，如老三环、燕子坞、珍珑棋局、夺宝马贼等，又有更多手游创新特色玩法；精致细腻的3D场景、实时便捷的交互体验、丰富多样的社交玩法，金戈铁马快意恩仇、最原汁原味的的正宗金庸武侠世界等你一起来体验！                    </div>
+                </div>
+                <div class="ser_con" style="margin-top: 40px;">
+                    <div style="display: flex; justify-content: space-between;">
+                        <div  class="con_1" style="display: flex; justify-content: space-between; width: 25%;">
+                            <div style="background-color: white; width: 100px; height: 100px; border-radius: 5px;">
+                                <img src="./img/3_12.png" alt="" style="width: 80px; height: 80px; margin-left: 50%; margin-top: 50%; transform: translateX(-50%) translateY(-50%);">
+                            </div>
+                            <div>
+                                <div style="font-size: 20px;margin-top: 50%;transform: translateY(-50%);">完美世界</div>
+                                <div style="color: white; opacity: 0.5; font-size: 13px; transform: translateY(-50%);">手机端游戏</div>
+                            </div>
+                        </div>
+                        <div>
+                            <a href="">
+                                进入官网<i class="fa fa-chevron-right" style="color: skyblue; line-height: 100px;"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div style="color: white; opacity: 0.5; margin-top: 20px;">
+                        《完美世界》手游是由腾讯游戏代理，完美世界研发的自由飞行战斗RPG手游，产品于2019年3月6日正式上线。作为端游改编手游，产品拥有电影级画质表现，还原原作经典无缝大世界，再现祖龙城、无妄海等耳熟能详的场景，三大种族六大职业将再临完美大陆，为千万玩家构建心中的“完美世界”。                    </div>
+                </div>
+                
+            </div>
+            <div id="ping_tai" class="container-fluid section">
+                
+                <h1>平台产品</h1>
+                <div class="ser_con" style="margin-top: 40px;">
+                    <div style="display: flex; justify-content: space-between;">
+                        <div  class="con_2" style="display: flex; justify-content: space-between; width: 30%;">
+                            <div style="background-color: white; width: 100px; height: 100px; border-radius: 5px;">
+                                <img src="./img/3_13.png" alt="" style="width: 80px; height: 80px; margin-left: 50%; margin-top: 50%; transform: translateX(-50%) translateY(-50%);">
+                            </div>
+                            <div>
+                                <div style="font-size: 20px;margin-top: 50%;transform: translateY(-50%);">腾讯游戏平台</div>
+                                <div style="color: white; opacity: 0.5; font-size: 13px; transform: translateY(-50%);">游戏平台</div>
+                            </div>
+                        </div>
+                        <div>
+                            <a href="">
+                                进入官网<i class="fa fa-chevron-right" style="color: skyblue; line-height: 100px;"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div style="color: white; opacity: 0.5; margin-top: 20px;">
+                        WeGame是腾讯旗下的游戏平台。致力于发现全球好游戏，提供游戏资讯、购买、下载、助手、直播和社区等一站式游戏服务，满足优质汉化、社交互动、稳定国服等更贴心的本地化需求，同时连接全球开发者与游戏玩家，构筑玩家与开发者的沟通桥梁。
+                    </div>
+                </div>
+                <div class="ser_con" style="margin-top: 40px;">
+                    <div style="display: flex; justify-content: space-between;">
+                        <div  class="con_1" style="display: flex; justify-content: space-between; width: 25%;">
+                            <div style="background-color: white; width: 100px; height: 100px; border-radius: 5px;">
+                                <img src="./img/3_14.png" alt="" style="width: 80px; height: 80px; margin-left: 50%; margin-top: 50%; transform: translateX(-50%) translateY(-50%);">
+                            </div>
+                            <div>
+                                <div style="font-size: 20px;margin-top: 50%;transform: translateY(-50%);">QQ游戏</div>
+                                <div style="color: white; opacity: 0.5; font-size: 13px; transform: translateY(-50%);">游戏平台</div>
+                            </div>
+                        </div>
+                        <div>
+                            <a href="">
+                                进入官网<i class="fa fa-chevron-right" style="color: skyblue; line-height: 100px;"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div style="color: white; opacity: 0.5; margin-top: 20px;">
+                        QQ游戏，腾讯旗下元老级产品，线上运营超过16年，当下累计注册用户超越14亿，且聚集了一大批游戏年龄超10年的用户，迄今仍为页游市场第一平台。平台内容十分丰富，游戏数量超越1000 款，涵盖棋牌、休闲、动作、益智、角色扮演、手游等各品类游戏，满足用户日常休闲乐趣需要。<br>
+平台从乐趣出发，旨在全方位打造一个无处不在的乐趣平台，从内容的引入审核、推荐审核等均严格把控游戏品质，为用户输送良好、健康、有趣的游戏内容；从社区交流、用户意见采纳等关注用户声音，打造积极、友好互动的社区平台； 想玩休闲游戏，就来QQ游戏平台!
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <div class="fix_phone"
+        style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: black; z-index: 9999999;  padding: 100px 40px ;">
+        <a href="./index.html">
+            <div style="color: white ; opacity: 0.5; font-size: 25px; margin-top: 20px;"> 首页</div>
+        </a>
+        <a href="./about.html">
+            <div style="color: white; opacity: 0.5;  margin-top: 20px;font-size: 25px;"> 关于腾讯游戏</div>
+        </a>
+        <a href="./Introduction.html">
+            <div style="color: white;  margin-top: 20px; font-size: 25px;"> 游戏介绍</div>
+        </a>
+        <a href="./Brands.html">
+            <div style="color: white; opacity: 0.5; margin-top: 20px; font-size: 25px;"> 品牌活动</div>
+        </a>
+    </div>
+    <div class="geng_last" style="padding-top: 2%; padding-bottom: 2%; margin-top: 4%; height: 30%; background: #28234c; width: 100%; z-index: 99;">
+        <div class="container3">
+            <div style="width: 40%; display: flex; justify-content: space-between;">
+                <div class="geng_love" style="color: white; font-size: 17px; font-weight: bold;">关注我们<i
+                        class="fa fa-sort-desc" style="display: none;"></i>
+                    <a href="">
+                        <div class="last_item" style="margin-top: 10px; color: white; opacity: 0.5; font-size: 14px;">微信
+                        </div>
+
+                    </a>
+                    <a href="">
+                        <div class="last_item" style="margin-top: 10px; color: white; opacity: 0.5; font-size: 14px;">
+                            新浪微博</div>
+
+                    </a>
+                </div>
+                <div class="geng_love" style="color: white; font-size: 17px; font-weight: bold;">加入我们<i
+                        class="fa fa-sort-desc" style="display: none;"></i>
+                    <a href="">
+                        <div class="last_item" style="margin-top: 10px; color: white; opacity: 0.5; font-size: 14px;">
+                            社会招聘</div>
+
+                    </a>
+                    <a href="">
+                        <div class="last_item" style="margin-top: 10px; color: white; opacity: 0.5; font-size: 14px;">
+                            校园招聘</div>
+
+                    </a>
+                    <a href="">
+                        <div class="last_item" style="margin-top: 10px; color: white; opacity: 0.5; font-size: 14px;">
+                            国际招聘</div>
+
+                    </a>
+
+                </div>
+                <div class="geng_love" style="color: white; font-size: 17px; font-weight: bold;">联系我们<i
+                        class="fa fa-sort-desc" style="display: none;"></i>
+                    <a href="">
+                        <div class="last_item" style="margin-top: 10px; color: white; opacity: 0.5; font-size: 14px;">
+                            客户服务</div>
+
+                    </a>
+                    <a href="">
+                        <div class="last_item" style="margin-top: 10px; color: white; opacity: 0.5; font-size: 14px;">
+                            合作洽谈</div>
+
+                    </a>
+                    <a href="">
+                        <div class="last_item" style="margin-top: 10px; color: white; opacity: 0.5; font-size: 14px;">
+                            服务采购</div>
+
+                    </a>
+                </div>
+                <div class="geng_love" style="color: white; font-size: 17px; font-weight: bold;">法律信息<i
+                        class="fa fa-sort-desc" style="display: none;"></i>
+                    <a href="">
+                        <div class="last_item" style="margin-top: 10px; color: white; opacity: 0.5; font-size: 14px;">
+                            服务协议</div>
+
+                    </a>
+                    <a href="">
+                        <div class="last_item" style="margin-top: 10px; color: white; opacity: 0.5; font-size: 14px;">
+                            隐私政策</div>
+
+                    </a>
+                    <a href="">
+                        <div class="last_item" style="margin-top: 10px; color: white; opacity: 0.5; font-size: 14px;">
+                            知识产权</div>
+
+                    </a>
+                </div>
+            </div>
+
+            <div><img style="width: 197px; height: 27px;" src="./img/logo_tencent.png" alt=""></div>
+        </div>
+    </div>
+
+    <script src="./js/intro.js"></script>
+</body>
+
+</html>
